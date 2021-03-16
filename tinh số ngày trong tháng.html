@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tínhngàytháng</title>
+</head>
+<body>
+<input  type="text" id="a">
+<button id="bt" onclick="my()">ketqua</button>
+<h1 id="result"></h1>
+
+
+</body>
+</html>
+<script>
+    function my() {
+        let ip=document.getElementById('a').value;
+        if ( 1<=ip && ip <= 12) {
+            switch (ip) {
+                case 3 :
+                    break;
+                case 5:
+                    break;
+                case 7:
+                    break;
+                case 8:
+                    break;
+                case 10:
+                    break;
+                case 12:
+                    document.getElementById('result').innerHTML = 'Tháng' + ip + 'có 31 ngày';
+                    break;
+                case 2:
+                    document.getElementById('result').innerHTML = 'Tháng' + ip + 'có 28 hoặc 29 ngày';
+break;
+
+               default:
+                    document.getElementById('result').innerHTML = 'Tháng' + ip + 'có 30 ngày';
+          }
+        }
+        else {
+            alert('vui lòng nhập lại');
+        }
+    }
+
+</script>
+
+
+

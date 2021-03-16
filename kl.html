@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>luyen_tap_if_else</title>
+</head>
+<body>
+<script>
+  let fullName = prompt('nhap ten');
+
+  if( fullName=='adm'){
+      alert('xin chao adm');
+      let mk = prompt('nhap mk');
+      if(mk =='123'){
+          alert('chao dai ca');
+      }
+      else if(mk == ''){
+          alert('nhap lai mk');
+      }
+      else {
+          alert('sai mk');
+      }
+
+  }
+  else if(fullName ==''){
+      alert('nhap lai');
+  }
+  else {
+      alert('tao k biet m la ai')
+  }
+</script>
+</body>
+</html>

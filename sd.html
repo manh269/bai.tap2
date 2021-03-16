@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="input">
+<button id="bt" onclick="ol()">Tính số ngày</button>
+<p id="result"></p>
+</body>
+</html>
+<script>
+    function ol() {
+        let ip=parseInt(document.getElementById('input').value);
+        if (1<=ip&&ip<=12) {
+            switch (ip) {
+                case 3:
+                case 5:
+                case 7:
+                case 8:
+                case 10:
+                case 12:
+                    document.getElementById('result').innerText = 'Tháng ' + ' ' + ip + ' có 31 ngày';
+                    break;
+                case 2:
+                    document.getElementById('result').innerText = 'Tháng ' + ' ' + ip + ' có 28 hoặc 29 ngày';
+                    break;
+                default:
+                    document.getElementById('result').innerText = 'Tháng ' + ' ' + ip + ' có 30 ngày';
+
+            }
+        }
+        else {
+            alert('Nhập sai tháng mời nhập lại');
+        }
+    }
+</script>

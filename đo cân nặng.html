@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head >
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script >
+    let weight = parseInt(prompt('a ='));
+    let height = parseInt(prompt('b ='));
+    let bmi = weight / ( height ^ 2);
+    if(bmi<18.5){
+        alert('underweight');
+    }
+    else if(18.5<=bmi<25){
+        alert('normal');
+    }else if(25<=bmi<30){
+        alert('Overweight');
+
+    }else {
+        alert('Obese');
+    }
+</script>
+</body>
+</html>
